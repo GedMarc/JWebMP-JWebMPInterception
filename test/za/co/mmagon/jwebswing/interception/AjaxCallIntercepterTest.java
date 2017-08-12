@@ -8,19 +8,18 @@ package za.co.mmagon.jwebswing.interception;
 import org.junit.Test;
 
 /**
- *
  * @author Marc Magon
  */
 public class AjaxCallIntercepterTest
 {
 
-    public AjaxCallIntercepterTest()
-    {
-    }
+	public AjaxCallIntercepterTest()
+	{
+	}
 
-    @Test
-    public void testSomeMethod()
-    {
-    }
+	@Test
+	public void testSomeMethod()
+	{
+	}
 
 }

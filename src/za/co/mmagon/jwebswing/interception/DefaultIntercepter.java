@@ -24,16 +24,16 @@ package za.co.mmagon.jwebswing.interception;
  */
 public interface DefaultIntercepter
 {
-
-    /**
-     * Intercepts a call from this method
-     */
-    public void intercept();
-
-    /**
-     * Sorts accordingly, default applied 100
-     *
-     * @return
-     */
-    public Integer sortOrder();
+	
+	/**
+	 * Intercepts a call from this method
+	 */
+	public void intercept();
+	
+	/**
+	 * Sorts accordingly, default applied 100
+	 *
+	 * @return
+	 */
+	public Integer sortOrder();
 }
