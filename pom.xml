@@ -109,10 +109,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <stripVersion>true</stripVersion>
-                    <destFileName>guice-injection</destFileName>
-                </configuration>
                 <executions>
                     <execution>
                         <id>testJar</id>
