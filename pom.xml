@@ -107,6 +107,7 @@
 
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+		<sonar.host.url>https://www.armin.software/sonar</sonar.host.url>
     </properties>
 
     <build>
@@ -166,7 +167,10 @@
                     </execution>
                 </executions>
             </plugin>
-        </plugins>
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.3.0.603</version>            </plugin>            <plugin>                <groupId>org.jacoco</groupId>                <artifactId>jacoco-maven-plugin</artifactId>                <version>0.7.9</version>            </plugin>        </plugins>
     </build>
 
     <dependencies>
@@ -229,5 +233,4 @@
     <ciManagement>
         <system>TeamCity</system>
         <url>http://www.armin.software/teamcity</url>
-    </ciManagement>
-</project>
+    </ciManagement>    <reporting>        <plugins>            <plugin>                <groupId>org.jacoco</groupId>                <artifactId>jacoco-maven-plugin</artifactId>     <version>0.7.9</version>           <reportSets>                    <reportSet>                        <reports>                            <!-- select non-aggregate reports -->                            <report>report</report>                        </reports>                    </reportSet>                </reportSets>            </plugin>        </plugins>    </reporting></project>
