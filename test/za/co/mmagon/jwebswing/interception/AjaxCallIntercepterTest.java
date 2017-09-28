@@ -5,21 +5,21 @@
  */
 package za.co.mmagon.jwebswing.interception;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Marc Magon
  */
 public class AjaxCallIntercepterTest
 {
-
+	
 	public AjaxCallIntercepterTest()
 	{
 	}
-
+	
 	@Test
 	public void testSomeMethod()
 	{
 	}
-
+	
 }
