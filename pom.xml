@@ -34,7 +34,7 @@
             <id>development</id>
             <properties>
                 <src.dir>src</src.dir>
-                <test.dir>test</test.dir>
+                <test.dir>test</test.dir><additionalparam>-Xdoclint:none</additionalparam>
             </properties>
 
         </profile>
@@ -42,7 +42,7 @@
             <id>unittest-profile</id>
             <properties>
                 <src.dir>src</src.dir>
-                <test.dir>test</test.dir>
+                <test.dir>test</test.dir><additionalparam>-Xdoclint:none</additionalparam>
             </properties>
             <build>
                 <plugins>
@@ -88,7 +88,7 @@
             <id>release-profile</id>
             <properties>
                 <src.dir>src</src.dir>
-                <test.dir>test</test.dir>
+                <test.dir>test</test.dir><additionalparam>-Xdoclint:none</additionalparam>
             </properties>
         </profile>
     </profiles>
@@ -97,7 +97,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <src.dir>src</src.dir>
-        <test.dir>test</test.dir>
+        <test.dir>test</test.dir><additionalparam>-Xdoclint:none</additionalparam>
         <maven.jar.version>3.0.2</maven.jar.version>
         <maven.dependency.version>3.0.1</maven.dependency.version>
         <maven.javadoc.version>2.10.4</maven.javadoc.version>
@@ -142,7 +142,7 @@
                             <goal>jar</goal>
                         </goals>
                         <configuration>
-                            <failOnError>false</failOnError>
+                            <failOnError>false</failOnError><additionalparam>-Xdoclint:none</additionalparam>
                             <!-- switch on dependency-driven aggregation -->
                             <includeDependencySources>true</includeDependencySources>
                         </configuration>
