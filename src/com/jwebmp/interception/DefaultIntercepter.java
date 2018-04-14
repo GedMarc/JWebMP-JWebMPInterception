@@ -14,26 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.interfaces;
+package com.jwebmp.interception;
 
 /**
+ * Intercepts all calls at all points
+ *
  * @author Marc Magon
- * @since 30 May 2017
+ * @since 10 Apr 2017
  */
-public interface RenderAfterLinks
+public interface DefaultIntercepter
 {
 
 	/**
-	 * Renders after the scripts
-	 *
-	 * @return
+	 * Intercepts a call from this method
 	 */
-	StringBuilder render();
+	void intercept();
 
 	/**
-	 * The sort order
+	 * Sorts accordingly, default applied 100
 	 *
 	 * @return
 	 */
-	int sortOrder();
+	Integer sortOrder();
 }

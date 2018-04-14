@@ -14,26 +14,29 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.interfaces;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.jwebmp.interception;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Marc Magon
- * @since 30 May 2017
  */
-public interface RenderBeforeLinks
+public class AjaxCallIntercepterTest
 {
 
-	/**
-	 * Renders after the scripts
-	 *
-	 * @return
-	 */
-	StringBuilder render();
+	public AjaxCallIntercepterTest()
+	{
+	}
 
-	/**
-	 * The sort order
-	 *
-	 * @return
-	 */
-	int sortOrder();
+	@Test
+	public void testSomeMethod()
+	{
+	}
+
 }

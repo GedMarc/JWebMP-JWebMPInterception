@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,26 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.interception;
+
+package com.jwebmp.interception;
+
+import za.co.mmagon.guiceinjection.GuiceConfig;
+import za.co.mmagon.guiceinjection.interfaces.IGuiceConfigurator;
 
 /**
- * Intercepts all calls at all points
- *
- * @author Marc Magon
- * @since 10 Apr 2017
+ * Sets the scanner to include all methods
  */
-public interface DefaultIntercepter
+public class GuiceConfiguration
+		implements IGuiceConfigurator
 {
-	
-	/**
-	 * Intercepts a call from this method
-	 */
-	public void intercept();
-	
-	/**
-	 * Sorts accordingly, default applied 100
-	 *
-	 * @return
-	 */
-	public Integer sortOrder();
+	@Override
+	public GuiceConfig configure(GuiceConfig config)
+	{
+		return config.setMethodAnnotationIndexing(true)
+		             .setIgnoreMethodVisibility(true);
+	}
 }

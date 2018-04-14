@@ -1,4 +1,4 @@
-/* 
+/*
  * Copyright (C) 2017 Marc Magon
  *
  * This program is free software: you can redistribute it and/or modify
@@ -14,15 +14,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.interception;
+package com.jwebmp.interfaces;
 
 /**
- * Intercepts on the sites first call. Local Storage Session Storage and other items are not available
+ * Inject text after the scripts section
  *
  * @author Marc Magon
- * @since 10 Apr 2017
+ * @since 30 May 2017
  */
-public interface SiteCallInterceptor extends DefaultIntercepter
+public interface RenderBeforeScripts
 {
 
+	/**
+	 * Renders after the scripts
+	 *
+	 * @return
+	 */
+	StringBuilder render();
+
+	/**
+	 * The sort order
+	 *
+	 * @return
+	 */
+	int sortOrder();
 }

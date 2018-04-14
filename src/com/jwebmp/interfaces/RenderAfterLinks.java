@@ -14,16 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.interception;
+package com.jwebmp.interfaces;
 
 /**
- * Intercepts a call specific to an AJAX event.
- *
  * @author Marc Magon
- * @since 10 Apr 2017
+ * @since 30 May 2017
  */
-public interface AjaxCallIntercepter
-		extends SiteCallInterceptor
+public interface RenderAfterLinks
 {
 
+	/**
+	 * Renders after the scripts
+	 *
+	 * @return
+	 */
+	StringBuilder render();
+
+	/**
+	 * The sort order
+	 *
+	 * @return
+	 */
+	int sortOrder();
 }

@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package za.co.mmagon.jwebswing.interception;
+package com.jwebmp.interception;
 
 /**
  * Intercepts the Startup Data Call. Interception for directly after page
