@@ -49,8 +49,6 @@
     <build>
         <sourceDirectory>${src.dir}</sourceDirectory>
         <testSourceDirectory>${test.dir}</testSourceDirectory>
-        <finalName>jwebswing-interception</finalName>
-
         <plugins>
 
             <plugin>
