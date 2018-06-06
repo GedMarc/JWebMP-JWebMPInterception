@@ -7,13 +7,21 @@
         <artifactId>jwebmp-bom</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
-    
+
     <artifactId>jwebmp-interception</artifactId>
     <packaging>jar</packaging>
 
     <name>JWebSwing Interception Library</name>
     <description>Remote Access Annotations and Interfaces to allow multi-jar implementation with JWebSwing</description>
     <url>https://github.com/GedMarc/JWebSwingInterception</url>
+
+    <repositories>
+        <repository>
+            <id>jwebmp-snapshot</id>
+            <name>JWebMPArtifactory-snapshots</name>
+            <url>https://jwebmp.com/artifactory/libs-snapshot</url>
+        </repository>
+    </repositories>
 
     <properties>
         <src.dir>src</src.dir>
