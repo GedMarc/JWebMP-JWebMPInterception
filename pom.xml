@@ -9,6 +9,7 @@
     </parent>
     <artifactId>jwebmp-interception</artifactId>
     <packaging>jar</packaging>
+    <version>0.0.0_0-SNAPSHOT</version>
 
     <name>JWebSwing Interception Library</name>
     <description>Remote Access Annotations and Interfaces to allow multi-jar implementation with JWebSwing</description>
