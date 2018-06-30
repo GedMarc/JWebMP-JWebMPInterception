@@ -17,8 +17,8 @@
 
 package com.jwebmp.interception;
 
-import com.jwebmp.guiceinjection.GuiceConfig;
-import com.jwebmp.guiceinjection.interfaces.GuiceConfigurator;
+import com.jwebmp.guicedinjection.GuiceConfig;
+import com.jwebmp.guicedinjection.interfaces.GuiceConfigurator;
 
 /**
  * Sets the scanner to include all methods
