@@ -14,7 +14,7 @@
     <name>JWebSwing Interception Library</name>
     <description>Remote Access Annotations and Interfaces to allow multi-jar implementation with JWebSwing</description>
     <url>https://github.com/GedMarc/JWebSwingInterception</url>
-    
+
     <properties>
         <src.dir>src</src.dir>
         <test.dir>test</test.dir>
@@ -34,7 +34,7 @@
 
         <dependency>
             <groupId>com.jwebmp</groupId>
-            <artifactId>guice-injection</artifactId>
+            <artifactId>guiced-injection</artifactId>
             <version>${project.version}</version>
         </dependency>
 
