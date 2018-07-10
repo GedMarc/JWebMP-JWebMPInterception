@@ -14,15 +14,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.interfaces;
+package com.jwebmp.interception.interfaces;
 
 /**
- * Renders before the dynamic script section
+ * Inject text after the scripts section
  *
  * @author Marc Magon
  * @since 30 May 2017
  */
-public interface RenderBeforeDynamicScripts
+public interface RenderBeforeScripts
 {
 
 	/**
