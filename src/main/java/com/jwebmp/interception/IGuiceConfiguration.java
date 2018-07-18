@@ -18,13 +18,13 @@
 package com.jwebmp.interception;
 
 import com.jwebmp.guicedinjection.GuiceConfig;
-import com.jwebmp.guicedinjection.interfaces.GuiceConfigurator;
+import com.jwebmp.guicedinjection.interfaces.IGuiceConfigurator;
 
 /**
  * Sets the scanner to include all methods
  */
-public class GuiceConfiguration
-		implements GuiceConfigurator
+public class IGuiceConfiguration
+		implements IGuiceConfigurator
 {
 	@Override
 	public GuiceConfig configure(GuiceConfig config)
