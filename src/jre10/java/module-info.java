@@ -1,5 +1,4 @@
-import com.jwebmp.guicedinjection.interfaces.IGuiceConfigurator;
-import com.jwebmp.interception.IGuiceConfiguration;
+import com.jwebmp.interception.JWebMPGuiceContextConfig;
 
 module com.jwebmp.interception{
 	requires com.jwebmp.guicedinjection;
@@ -7,5 +6,5 @@ module com.jwebmp.interception{
 	exports com.jwebmp.interception;
 	exports com.jwebmp.interception.interfaces;
 
-	provides IGuiceConfigurator with IGuiceConfiguration;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceConfigurator with JWebMPGuiceContextConfig;
 }

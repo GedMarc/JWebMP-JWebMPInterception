@@ -23,13 +23,13 @@ import com.jwebmp.guicedinjection.interfaces.IGuiceConfigurator;
 /**
  * Sets the scanner to include all methods
  */
-public class IGuiceConfiguration
+public class JWebMPGuiceContextConfig
 		implements IGuiceConfigurator
 {
 	@Override
 	public GuiceConfig configure(GuiceConfig config)
 	{
 		return config.setMethodAnnotationIndexing(true)
-		             .setIgnoreMethodVisibility(true);
+		             .setMethodInfo(true);
 	}
 }
