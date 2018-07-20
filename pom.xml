@@ -23,6 +23,7 @@
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
             <type>jar</type>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -55,14 +56,8 @@
 
     </dependencies>
 
-    <organization>
-        <name>Marc Magon</name>
-        <url>http://jwebmp.com</url>
-    </organization>
-
     <scm>
         <url>https://github.com/GedMarc?tab=repositories</url>
-        <developerConnection>Marc Magon</developerConnection>
     </scm>
 
     <issueManagement>
