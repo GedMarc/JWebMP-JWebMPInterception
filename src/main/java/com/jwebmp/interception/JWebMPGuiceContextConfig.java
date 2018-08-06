@@ -29,7 +29,7 @@ public class JWebMPGuiceContextConfig
 	@Override
 	public GuiceConfig configure(GuiceConfig config)
 	{
-		return config.setMethodAnnotationIndexing(true)
+		return config.setAnnotationScanning(true)
 		             .setMethodInfo(true);
 	}
 }
