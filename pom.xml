@@ -23,7 +23,6 @@
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
             <type>jar</type>
-            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -32,7 +31,6 @@
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
             <type>jar</type>
-            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -67,7 +65,6 @@
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
             <type>jar</type>
-            <optional>true</optional>
         </dependency>
 
     </dependencies>
