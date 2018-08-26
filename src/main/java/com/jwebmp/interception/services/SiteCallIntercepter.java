@@ -14,26 +14,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.interception;
+package com.jwebmp.interception.services;
+
+import com.jwebmp.guicedinjection.interfaces.IDefaultService;
 
 /**
- * Intercepts all calls at all points
+ * Intercepts on the sites first call. Local Storage Session Storage and other items are not available
  *
  * @author Marc Magon
  * @since 10 Apr 2017
  */
-public interface DefaultIntercepter
+public interface SiteCallIntercepter<J extends SiteCallIntercepter<J>>
+		extends IDefaultService<J>
 {
-
-	/**
-	 * Intercepts a call from this method
-	 */
 	void intercept();
-
-	/**
-	 * Sorts accordingly, default applied 100
-	 *
-	 * @return
-	 */
-	Integer sortOrder();
 }

@@ -17,6 +17,7 @@
 package com.jwebmp.interception;
 
 import com.jwebmp.guicedinjection.GuiceContext;
+import com.jwebmp.interception.services.AjaxCallIntercepter;
 import com.jwebmp.logger.LogFactory;
 import org.aopalliance.intercept.MethodInvocation;
 
@@ -44,7 +45,7 @@ class AjaxCallIntercepters
 	@Override
 	public Object invoke(MethodInvocation invocation) throws Throwable
 	{
-		LOG.finer("Intercepting Ajax Call");
+		AjaxCallIntercepters.LOG.finer("Intercepting Ajax Call");
 		for (Class<? extends AjaxCallIntercepter> siClass : GuiceContext.reflect()
 		                                                                .getSubTypesOf(AjaxCallIntercepter.class))
 		{
@@ -54,10 +55,10 @@ class AjaxCallIntercepters
 			}
 			AjaxCallIntercepter si = GuiceContext.inject()
 			                                     .getInstance(siClass);
-			LOG.log(Level.FINER, "Ajax Call Interception Occuring : {0}", siClass.getCanonicalName());
+			AjaxCallIntercepters.LOG.log(Level.FINER, "Ajax Call Interception Occuring : {0}", siClass.getCanonicalName());
 			si.intercept();
 		}
-		LOG.finer("Interception for Ajax Call Complete");
+		AjaxCallIntercepters.LOG.finer("Interception for Ajax Call Complete");
 		return invocation.proceed();
 	}
 }

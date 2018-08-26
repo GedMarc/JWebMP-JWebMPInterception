@@ -14,15 +14,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.jwebmp.interception;
+package com.jwebmp.interception.services;
 
 /**
- * Intercepts on the sites first call. Local Storage Session Storage and other items are not available
+ * Intercepts the Startup Data Call. Interception for directly after page
+ * delivered
  *
  * @author Marc Magon
  * @since 10 Apr 2017
  */
-public interface SiteCallInterceptor extends DefaultIntercepter
+public interface DataCallIntercepter<J extends DataCallIntercepter<J>>
+		extends SiteCallIntercepter<J>
 {
 
 }
