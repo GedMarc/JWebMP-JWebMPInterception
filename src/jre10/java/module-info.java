@@ -6,7 +6,13 @@ module com.jwebmp.interception {
 	uses com.jwebmp.interception.services.DataCallIntercepter;
 	uses com.jwebmp.interception.services.SiteCallIntercepter;
 
-	requires transitive com.jwebmp.guicedinjection;
+
+	requires com.jwebmp.guicedinjection;
+	requires aopalliance;
+	requires com.jwebmp.logmaster;
+	requires java.logging;
+	requires com.google.guice;
+	requires java.validation;
 
 	exports com.jwebmp.interception;
 	exports com.jwebmp.interception.services;
