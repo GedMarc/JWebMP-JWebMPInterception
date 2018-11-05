@@ -1,5 +1,8 @@
 
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
+import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
 import com.jwebmp.interception.JWebMPInterceptionBinder;
+import com.jwebmp.interception.implementations.JWebMPInterceptionModuleExclusions;
 
 module com.jwebmp.interception {
 	uses com.jwebmp.interception.services.AjaxCallIntercepter;
@@ -18,5 +21,8 @@ module com.jwebmp.interception {
 	exports com.jwebmp.interception.services;
 
 	provides com.jwebmp.guicedinjection.interfaces.IGuiceDefaultBinder with JWebMPInterceptionBinder;
+
+	provides IGuiceScanModuleExclusions with JWebMPInterceptionModuleExclusions;
+	provides IGuiceScanJarExclusions with JWebMPInterceptionModuleExclusions;
 
 }
