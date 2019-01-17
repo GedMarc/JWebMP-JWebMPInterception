@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 Marc Magon
+ * Copyright (C) 2017 GedMarc
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ package com.jwebmp.interception.services;
  * Intercepts the Startup Data Call. Interception for directly after page
  * delivered
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 10 Apr 2017
  */
 public interface DataCallIntercepter<J extends DataCallIntercepter<J>>
