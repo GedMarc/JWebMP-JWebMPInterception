@@ -16,7 +16,7 @@
  */
 package com.jwebmp.interception.services;
 
-import com.jwebmp.guicedinjection.interfaces.IDefaultService;
+import com.guicedee.guicedinjection.interfaces.IDefaultService;
 
 /**
  * Intercepts on the sites first call. Local Storage Session Storage and other items are not available
