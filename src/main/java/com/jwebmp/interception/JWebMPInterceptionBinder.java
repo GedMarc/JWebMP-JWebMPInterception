@@ -13,7 +13,7 @@ import com.jwebmp.interception.services.SiteCallIntercepter;
 import java.util.ServiceLoader;
 import java.util.Set;
 
-@SuppressWarnings("Convert2Diamond")
+@SuppressWarnings({"Convert2Diamond","unchecked", "rawtypes"})
 public class JWebMPInterceptionBinder
 		implements IGuiceDefaultBinder<JWebMPInterceptionBinder, GuiceInjectorModule>
 {
