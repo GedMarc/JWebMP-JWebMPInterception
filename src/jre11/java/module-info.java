@@ -17,6 +17,4 @@ module com.jwebmp.interception {
 	provides com.guicedee.guicedinjection.interfaces.IGuiceDefaultBinder with com.jwebmp.interception.JWebMPInterceptionBinder;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.interception.implementations.JWebMPInterceptionModuleExclusions;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.interception.implementations.JWebMPInterceptionModuleExclusions;
-
 }
