@@ -19,7 +19,6 @@
         <dependency>
             <groupId>com.guicedee.servlets</groupId>
             <artifactId>guiced-servlets</artifactId>
-            <type>jar</type>
         </dependency>
     </dependencies>
 
