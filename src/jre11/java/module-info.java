@@ -4,7 +4,7 @@ module com.jwebmp.interception {
 	uses com.jwebmp.interception.services.SiteCallIntercepter;
 
 	requires com.guicedee.guicedinjection;
-	requires java.validation;
+	requires jakarta.validation;
 
 	exports com.jwebmp.interception;
 	exports com.jwebmp.interception.services;
